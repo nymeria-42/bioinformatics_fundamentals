@@ -1,0 +1,11 @@
+blastp -query a.fasta -subject b.fast > resultado.txt
+
+blastp -query a.fasta - subject all.fasta > resultado.txt # alinhamento com sujeito sendo um arquivo multifasta
+
+## exibindo em formato tabular
+blastp -query a.fasta -subject all.fasta -outfmt 6 > resultado.txt
+
+# e-value: valor esperado, quanto mais proximo de 0 melhor -> significa alinhamento aleatorio
+
+# no python, basta importar os e fazer os.system("{command}")
+

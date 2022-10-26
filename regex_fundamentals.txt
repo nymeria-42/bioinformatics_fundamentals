@@ -1,0 +1,14 @@
+Rana catesbeiana (Shaw)
+Homo sapiens (Linnaeus)
+Physalia physalis (Linnaeus)
+
+Se usarmos o find e replace do vscode, por exemplo, podemos inserir a seleção por regex, escolhendo o último seletor (.*) e podemos mudar a ordem dos grupos do regex usando $<nome do grupo>. Ex: find (\w) (\w+) \((\w)\) e replace $3: $1 $2
+
+Match para os campos de arquivos com colunas separadas por tab: ([^\t]+)\t
+
+Greediness: quantificadores vão retornar os matchs mais longos. Se colocarmos ? depois do quantificador ele vai dar match na string mais curta possível, ao invés da mais longa. Ex: \w+?
+
+^ - inicio da linha, ou negativo, quando dentro de []
+$ - final da linha
+
+Fail loudly!! Dica para produzir mensagens de erro úteis para identificar falhas nas queries que produzem resultados incorretos. Pensar nas suposições e explicitá-las no regex.
